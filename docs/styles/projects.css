@@ -1,0 +1,147 @@
+.projects-container {
+	padding: 60px 5%;
+}
+
+.projects-container h1 {
+	color: var(--icon-color);
+	font-size: var(--article-header-size);
+	font-family: 'Poppins', sans-serif;
+}
+
+.project {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	background: var(--project-bg-color);
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.project .title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: var(--header-color);
+}
+
+.project img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	margin-top: 10px;
+}
+
+.project .description {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 15px;
+	margin-top: 10px;
+	color: var(--text-color);
+}
+
+.project .project-image-expand {
+	display: none;
+}
+
+.read-more-button {
+	margin-top: 10px;	
+	background-color: var(--icon-color);
+	color: black;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	color: var(--header-color);
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
+}
+
+.project a {
+	text-decoration: none;
+}
+
+.read-more-button:hover {
+	opacity: 1.0;
+}
+
+@media screen and (min-width: 800px) {
+
+	.project .project-image {
+		display: none;
+	}
+
+	.project {
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		height: 400px;
+	}
+
+	.project .content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project .project-image-expand {
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project img {
+		height: 300px;
+		width: 300px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.project .title {
+		font-size: 40px;
+	}
+
+	.project .description {
+		font-size: 22px;
+	}
+
+	.read-more-button {
+		font-size: 20px;
+		padding: 15px 25px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.project .title {
+		font-size: 35px;
+	}	
+
+	.project .description {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.project .title {
+		font-size: 30px;
+	}	
+
+	.project .description {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.projects-container {
+		padding: 40px 5%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.projects-container {
+		padding: 20px 5%;
+	}
+}

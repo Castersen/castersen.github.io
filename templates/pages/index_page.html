@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/images/name.svg">
+		<link rel="stylesheet" href="styles/global.css">
+		<link rel="stylesheet" href="styles/navbar.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<link rel="stylesheet" href="styles/articles.css">
+		<link rel="stylesheet" href="styles/projects.css">
+	</head>
+	<body>
+            {nav}
+			<div class="root"></div>
+
+			<div class="personal-info">
+
+				<div class="name-links-container">
+					<h4>Jonathan Castersen</h4>
+					<p>Passionate about programming and learning new technologies.</p>
+					<div class="links-container">
+						<a href="https://github.com/Castersen">
+							<svg class="link-icon">
+								<use href="images/icons.svg#github"></use>
+							</svg>
+						</a>
+						<a href="https://www.linkedin.com/in/jonathan-castersen-a311b8231/">
+							<svg class="link-icon">
+								<use href="images/icons.svg#linkedin"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="profile-image-container">	
+					<svg class="blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="blob">
+						<defs>
+							<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+								<stop offset="0%" style="stop-color: var(--blob-stop)"></stop>
+								<stop offset="100%" style="stop-color: var(--blob-bot);"></stop>
+							</linearGradient>
+						</defs>
+						<path  fill="url(#gradient)">
+							<animate attributeName="d"
+								dur="8s"
+								repeatCount="indefinite"
+
+								values="M448,309.5Q413,369,360,396.5Q307,424,247.5,433Q188,442,130.5,410Q73,378,79.5,314Q86,250,97,198.5Q108,147,155.5,126Q203,105,257,83.5Q311,62,368,92.5Q425,123,454,186.5Q483,250,448,309.5Z;
+
+												M401,303.5Q398,357,358,408.5Q318,460,256,441.5Q194,423,142.5,394.5Q91,366,70.5,308Q50,250,74,195Q98,140,146,108Q194,76,248.5,80.5Q303,85,358,108.5Q413,132,408.5,191Q404,250,401,303.5Z;
+
+												M460.5,315Q430,380,367,397.5Q304,415,238.5,451Q173,487,142,419Q111,351,88,300.5Q65,250,87,199Q109,148,150,107.5Q191,67,259,40Q327,13,381.5,64Q436,115,463.5,182.5Q491,250,460.5,315Z;
+
+												M446.94524,312.39331Q421.65861,374.78663,370.12802,418.35348Q318.59744,461.92033,256.22546,443.17994Q193.85348,424.43955,128.96657,404.9239Q64.07967,385.40825,73.40256,317.70412Q82.72546,250,92.21337,196.39331Q101.70128,142.78663,144.78663,100.72262Q187.87198,58.65861,246.48791,70.23755Q305.10384,81.81649,367.94524,99.97226Q430.78663,118.12802,451.50925,184.06401Q472.23187,250,446.94524,312.39331Z;
+
+											M448,309.5Q413,369,360,396.5Q307,424,247.5,433Q188,442,130.5,410Q73,378,79.5,314Q86,250,97,198.5Q108,147,155.5,126Q203,105,257,83.5Q311,62,368,92.5Q425,123,454,186.5Q483,250,448,309.5Z;">
+							</animate>
+						</path>
+					</svg>
+					<img src="images/me-blob.webp">
+				</div>
+			</div>
+
+			<div class="articles-container">
+                <h1>Recent Articles</h1>
+                {articles}
+			</div>
+
+		<div class="projects-container">
+			<h1>Projects</h1>
+			<div class="project">
+				<div class="project-image-expand">
+					<img height="400" src="images/bdck4/final-computer.webp" width="400"/>
+				</div>
+				<div class="content">
+					<div class="project-image">
+						<img src="images/bdck4/final-computer.webp" width=400 height=400>
+					</div>
+					<div class="title">
+						8-Bit Computer Built on Breadboards
+					</div>
+					<div class="description">
+						I built an 8-bit computer from scratch on multiple breadboards and documented the entire process. The computer has 16 bytes of RAM, a custom instruction set, and an ALU that can perform addition and subtraction.
+					<div>
+					<a href="projects/computer.html">
+						<div class="read-more-button">
+							READ MORE
+						</div>
+					</a>
+				</div>
+			</div>
+	</body>
+	<script src="scripts/navListener.js"></script>
+</html>
