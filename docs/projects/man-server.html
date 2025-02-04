@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/images/name.svg">
+<link rel="stylesheet" href="../styles/global.css">
+<link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../styles/blog.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.css" title="dark-mode" disabled>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-light.css" title="light-mode">
+</head>
+<body>
+<nav>
+    <a class="logo" href="/index.html">
+        <svg class="icon">
+            <use href="/images/icons.svg#name"></use>
+        </svg>
+        <h4>Programming</h4>
+    </a>
+    <ul class="nav-links">
+        <svg class="icon">
+            <use id="themeIcon" href="/images/icons.svg#sun"></use>
+        </svg>
+        <li>
+            <a href="/index.html">Home</a>
+        </li>
+        <li>
+            <a href="/pages/articles.html">Articles</a>
+        </li>
+        <li>
+            <a href="/pages/projects.html">Projects</a>
+        </li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+</nav>
+<div class="container">
+<div class="root"></div>
+<div class="post-container">
+<div class="post-meta">
+<h1> Man Page Server</h1>
+<div class='date'></div>
+</div>
+<div class="content">
+<p>View your local man pages in your browser. Supports multiple themes and is easily extensible. Caches converted man pages, written in pure python, follows links. Supports both mac and linux.</p>
+<p><a href="https://github.com/Castersen/man_server_python">GitHub Repository</a></p>
+<h2>Features</h2>
+<p>One of the most useful aspects of the terminal is being able to press tab and get suggestions or autocomplete. This feature is supported directly in the browser. This works by calling <strong>manpath -q</strong> for the directories man will look in and grabbing all the files within those directories. This is only done once, and then is cached in the browser.</p>
+<p>This means when searching for a man page in the browser you can just hit tab to view the available pages.</p>
+<p><img src="../images/man-server/autocomplete.webp"></p>
+<h2>Themes and Showcase</h2>
+<p><strong>light</strong>
+<img src="../images/man-server/light-theme.webp"></p>
+<p><strong>default</strong>
+<img src="../images/man-server/dark-theme.webp"></p>
+</div>
+</div>
+</div>
+<div class="footer"></div>
+</body>
+<script src="../scripts/navListener.js"></script>
+</html>

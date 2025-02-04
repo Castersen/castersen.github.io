@@ -9,7 +9,7 @@
 }
 
 .project {
-	margin-top: 10px;
+	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
 	background: var(--project-bg-color);
@@ -79,7 +79,7 @@
 		width: 100%;
 		justify-content: space-between;
 		align-items: center;
-		height: 400px;
+		/* height: 400px; */
 	}
 
 	.project .content {
@@ -94,7 +94,7 @@
 	}
 
 	.project img {
-		height: 300px;
+		/* height: 300px; */
 		width: 300px;
 		margin-left: 20px;
 		margin-right: 20px;

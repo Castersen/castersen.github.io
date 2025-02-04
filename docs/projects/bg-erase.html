@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/images/name.svg">
+<link rel="stylesheet" href="../styles/global.css">
+<link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../styles/blog.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.css" title="dark-mode" disabled>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-light.css" title="light-mode">
+</head>
+<body>
+<nav>
+    <a class="logo" href="/index.html">
+        <svg class="icon">
+            <use href="/images/icons.svg#name"></use>
+        </svg>
+        <h4>Programming</h4>
+    </a>
+    <ul class="nav-links">
+        <svg class="icon">
+            <use id="themeIcon" href="/images/icons.svg#sun"></use>
+        </svg>
+        <li>
+            <a href="/index.html">Home</a>
+        </li>
+        <li>
+            <a href="/pages/articles.html">Articles</a>
+        </li>
+        <li>
+            <a href="/pages/projects.html">Projects</a>
+        </li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+    </div>
+</nav>
+<div class="container">
+<div class="root"></div>
+<div class="post-container">
+<div class="post-meta">
+<h1> BG Erase</h1>
+<div class='date'></div>
+</div>
+<div class="content">
+<p>Uses the BRIA_RMBG-2.0 or 1.4 model to remove the background from an image. Supports CUDA or ONNX for CPU.</p>
+<p><a href="https://github.com/Castersen/bg-erase">GitHub Repository</a></p>
+<h2>Features</h2>
+<p>Supports both CUDA for those using NVIDIA GPUs and ONNX for those using CPU. Uses the <a href="https://huggingface.co/briaai/RMBG-2.0">briaai/BRIA_RMBG-2.0/1.4 model</a> to remove the background. The newer 2.0 model is much better at removing the background for generic images, but the 1.4 model is much faster and works well for simple images.</p>
+<p><img src="../images/bg-erase/showcase.webp"></p>
+</div>
+</div>
+</div>
+<div class="footer"></div>
+</body>
+<script src="../scripts/navListener.js"></script>
+</html>
